@@ -1,6 +1,16 @@
-    
-    html{
-    body{
-        background: red;
-    }
+    #header {
+        nav {
+            background: white;
+        }
+        .container-header {
+            margin-top: 60px;
+            h1 {
+                color: green;
+                font-weight: 600;
+            }
+            h4 {
+                color: orange;
+                font-weight: 500;
+            }
+        }
     }

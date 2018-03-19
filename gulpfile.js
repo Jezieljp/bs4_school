@@ -5,7 +5,7 @@ const sass = require('gulp-sass')
 const autoprefixer = require('gulp-autoprefixer')
 const cssmin = require('gulp-cssmin')
 const rename = require('gulp-rename')
-const sourceMap = require('gulp-sourcemap')
+const sourceMap = require('gulp-sourcemaps')
 const htmlReplace = require('gulp-html-replace')
 const del = require('del')
 const browerSync = require('browser-sync').create()
@@ -41,7 +41,7 @@ gulp.task('ug-css', ['comp-sass'], () => {
 	return gulp.src('assets/css/*.css')
 	.pipe(cssmin())
 	.pipe(rename('app.min.css'))
-	.pipe('dist/assets/css')
+	.pipe(gulp.dest('dist/assets/css'))
 })
 
 gulp.task('b-sync', () => {
@@ -61,7 +61,7 @@ gulp.task('watchfile', () => {
 	gulp.watch('assets/css/*.js', ['concat-script'])
 })
 
-gulp.task('serve', ['watchfile'], () => {
+gulp.task('serve', ['watchfile','ug-css', 'watchfile'], () => {
 	browerSync.init({
 		server: {
 			basDir: './'
