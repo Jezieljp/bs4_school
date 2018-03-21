@@ -2,6 +2,7 @@
         background-color: #0e6bc9;
         nav {
             background: white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12);
         }
         .container-header {
             margin-top: 60px;
@@ -26,34 +27,12 @@
                 box-shadow: 5px 5px rgba(238, 95, 29, 0.959);
             }
         }
-    } //MAIN CONTENT
+    } 
+    
+    //MAIN CONTENT
     #main-content {
         .box-content {
             padding: 1em;
-            .box{
-                .icon{
-                    width: 3em;
-                    height: 2.7em;
-                    display:inline-block;
-                    border: 2px solid orange;
-                    i{
-                        color: #FF550D;
-                        font-size: 1.5em;
-                    }
-                }
-            }
-             .box{
-            .icon{
-                width: 3em;
-                height: 2.7em;
-                display:inline-block;
-                border: 2px solid orange;
-                i{
-                    color: #FF550D;
-                    font-size: 1.5em;
-                }
-            }
-        }
             .box {
                 .icon {
                     width: 3em;
@@ -66,10 +45,41 @@
                     }
                 }
             }
-            &:hover{
-                border: 1px solid orange;                
-                transition:0.5s all;
+            .box {
+                .icon {
+                    width: 3em;
+                    height: 2.7em;
+                    display: inline-block;
+                    border: 2px solid orange;
+                    i {
+                        color: #FF550D;
+                        font-size: 1.5em;
+                    }
+                }
             }
+            .box {
+                .icon {
+                    width: 3em;
+                    height: 2.7em;
+                    display: inline-block;
+                    border: 2px solid orange;
+                    i {
+                        color: #FF550D;
+                        font-size: 1.5em;
+                    }
+                }
+            }
+            &:hover {
+                border: 1px solid orange;
+                transition: 0.5s all;
+            }
+        }
+    }
+
+    #sub-content{
+        background-color: #333333;
+        .title{
+            color: #19E85C;
         }
     }
 

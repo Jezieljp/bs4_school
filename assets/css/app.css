@@ -1,7 +1,8 @@
 #header {
   background-color: #0e6bc9; }
   #header nav {
-    background: white; }
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12); }
   #header .container-header {
     margin-top: 60px; }
     #header .container-header h1 {
@@ -48,6 +49,11 @@
   #main-content .box-content:hover {
     border: 1px solid orange;
     transition: 0.5s all; }
+
+#sub-content {
+  background-color: #333333; }
+  #sub-content .title {
+    color: #19E85C; }
 
 .title {
   font-weight: 300;
