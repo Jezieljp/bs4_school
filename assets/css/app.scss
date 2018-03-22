@@ -1,35 +1,39 @@
+    $bg-blue:#0e6bc9;
+    $bg-white:#ffffff;
+    $bg-black:#333333;
+    $font-color:  #FF550D;
+    $font-color-2: #19E85C;
+    
     #header {
-        background-color: #0e6bc9;
+        background-color:  $bg-blue;
         nav {
-            background: white;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+            background: $bg-white;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
         }
         .container-header {
             margin-top: 60px;
             h1 {
-                color: green;
-                text-shadow: 1px 1px 1px #FFF;
+                color: $font-color-2;
+                text-shadow: 1px 1px 1px $bg-white;
                 font-weight: 600;
             }
             h4 {
-                color: orange;
+                color: $font-color;
                 font-weight: 400;
                 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             }
             .header-bnt-call {
                 a {
-                    color: orange;
+                    color: $font-color;
                 }
             }
             img {
                 height: 22em;
-                border: 2px solid orange;
+                border: 2px solid $font-color;
                 box-shadow: 5px 5px rgba(238, 95, 29, 0.959);
             }
         }
-    } 
-    
-    //MAIN CONTENT
+    } //MAIN CONTENT
     #main-content {
         .box-content {
             padding: 1em;
@@ -38,9 +42,9 @@
                     width: 3em;
                     height: 2.7em;
                     display: inline-block;
-                    border: 2px solid orange;
+                    border: 2px solid $font-color;
                     i {
-                        color: #FF550D;
+                        color: $font-color;
                         font-size: 1.5em;
                     }
                 }
@@ -50,9 +54,9 @@
                     width: 3em;
                     height: 2.7em;
                     display: inline-block;
-                    border: 2px solid orange;
+                    border: 2px solid $font-color;
                     i {
-                        color: #FF550D;
+                        color: $font-color;
                         font-size: 1.5em;
                     }
                 }
@@ -62,34 +66,76 @@
                     width: 3em;
                     height: 2.7em;
                     display: inline-block;
-                    border: 2px solid orange;
+                    border: 2px solid $font-color;
                     i {
-                        color: #FF550D;
+                        color: $font-color;
                         font-size: 1.5em;
                     }
                 }
             }
             &:hover {
-                border: 1px solid orange;
+                border: 1px solid $font-color;
                 transition: 0.5s all;
             }
         }
     }
 
-    #sub-content{
-        background-color: #333333;
-        .title{
-            color: #19E85C;
+    #sub-content {
+        background-color: $bg-black;
+        .title {
+            color:  $font-color-2;
         }
+    } //ABOUT US COUNTER
+    #counter {
+        i {
+            font-size: 3.5em;
+            color: $font-color;
+        }
+        h4 {
+            font-size: 2.5em;
+            color:  $font-color-2;
+        }
+    } //CONTATOS
+    .contact {
+        background-color: #f4f4f4;
+        .contact-form {
+            background-color: $bg-white;
+        }
+    }
+
+    #footer {
+        background-color: #333333;
+        .info {
+            color: $font-color;
+        }
+        .social-list {
+            list-style: none;
+            font-weight: uppercase;
+            li {
+                display: inline-block;
+                a {
+                    text-decoration: none;
+                    color:  $bg-blue;
+                    i {
+                        font-size: 1.5em;
+                        margin-right: 3em;
+                    }
+                    &:hover{
+                        color: $font-color;
+                    }
+                }
+            }
+        }
+       
     }
 
     .title {
         font-weight: 300;
-        color: green;
+        color:  $font-color-2;
         text-transform: uppercase;
         font-size: 2.8em;
         .color {
-            color: orange;
+            color: $font-color;
         }
     }
 
@@ -97,18 +143,23 @@
         margin: auto;
         width: 5em;
         position: relative;
-        border-top: 2px solid #E84F16;
+        border-top: 2px solid $font-color;
         margin-top: 1em;
         &:before {
             position: absolute;
             display: inline-block;
             content: "";
-            background: orange;
-            border: 4px solid #fff;
+            background: $font-color;
+            border: 4px solid $bg-white;
             border-radius: 50%;
             width: 1em;
             height: 1em;
             top: -0.7em;
             left: 1.9em;
         }
+    } //LINHA
+    .line {
+        height: 100px;
+        background: $font-color;
+        width: 100%;
     }
