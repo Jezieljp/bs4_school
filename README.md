@@ -1,2 +1,1 @@
-"# bs4_school" 
-"# bs4" 
+"# template_bs4" 
