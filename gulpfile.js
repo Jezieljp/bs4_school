@@ -86,7 +86,7 @@ gulp.task('build', ['ug-script', 'ug-css'], () => {
 		'assets/video/*',
 		'assets/fonts/*'
 	], { base: './'})
-	.pipe(gulp.dest('dist'))
+	.pipe(gulp.dest('dist/dev'))
 })
 
 gulp.task('default', ['clean', 'build'], () => {
